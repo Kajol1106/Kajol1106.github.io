@@ -3,9 +3,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hello</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Java Backend Developer</p>
+                <h1>Hi👋, I'm <span> Kajol</span> <br>Kolagir from India</br></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- for image -->
+                <div class="about-col-1">
+                    <img src="Images/profile.jpeg">
+                </div>
+
+                <!-- for text -->
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a highly detail-oriented and organized Java Backend Developer with excellent technical and communication
+                        sills. Passionate about coding and self-motivated with keen interest in building use-centric products.
+                        I just completed an Intensive Full Stack Web Development Bootcamp from Masai School with 1200+ hours soft skills
+                        training. Looking forward to utilising my skills in a challenging work environment.
+                        I like to help people, solve their problem and bring smile on their face
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('tech-skills')">Tech Skills</p>
+                        <p class="tab-links" onclick="opentab('soft-skills')">Soft Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="tech-skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>SpringBoot</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="soft-skills">
+                        <ul>
+                            <li>Communication skill</li>
+                            <li>Good Listener</li>
+                            <li>Time-management skill</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="project-list"></div>
+        </div>
+    </div>
 </body>
+
+<script>
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 </html>
