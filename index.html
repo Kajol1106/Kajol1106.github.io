@@ -11,12 +11,14 @@
         <div class="container">
             <nav>
                 <img src="Images/logo.jpg" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="Images/close.png" id="menu-image" onclick="closeMenu()">
                 </ul>
+                <img src="Images/menu-bar.png" id="menu-image" onclick="openMenu()">
             </nav>
             <div class="header-text">
                 <p>Java Backend Developer</p>
@@ -48,26 +50,36 @@
                         <p class="tab-links active-link" onclick="opentab('tech-skills')">Tech Skills</p>
                         <p class="tab-links" onclick="opentab('soft-skills')">Soft Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certificate</p>
                     </div>
                     <div class="tab-contents active-tab" id="tech-skills">
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Java</li>
-                            <li>SpringBoot</li>
+                            <li><span>Languages : </span><br>HTML || CSS || JavaScript || Java</li>
+                            <li><span>Frameworks : </span><br>SpringBoot || J2EE</li>
+                            <li><span>API's : </span><br>Servelets || </li>
+                            <li><span>Software : </span><br>STS || VS Code</li>
+                            <li><span>Database : </span><br>Oracle || MySQL || Database SQL command</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="soft-skills">
                         <ul>
-                            <li>Communication skill</li>
+                            <li>Communication Skill</li>
                             <li>Good Listener</li>
-                            <li>Time-management skill</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            
+                            <li><span>Full Stack Java Development Course : </span><br>Masai School, Bangalore <br> Jan 2022 - Nov 2022 <br><a href="https://drive.google.com/file/d/1g1APn5KImHWciLqvwCEgdyPCgn7-N1sO/view?usp=sharing"><img src="Images/certificate (2).png" id="certificate-image"></a></li>
+                            <li><span>Bachelors of Computer Application (9.29 CGPA) : </span><br>College of Computer Science and Information Technology, Latur. <br> 2018 - 2021 <br><a href="https://drive.google.com/file/d/1uApXjx_ldKp9JqPnC4NQB-XPRxRIfcds/view?usp=sharing"><img src="Images/certificate (2).png" id="certificate-image"></a></li>
+                            <li><span>Bachelor of Art (Open Univercity) : </span><br>Yashwantrao Chavhan Maharashtra Open University (YCMOU) <br> 2016 - 2019 <br><a href="https://drive.google.com/file/d/1g1APn5KImHWciLqvwCEgdyPCgn7-N1sO/view?usp=sharing"><img src="Images/certificate (2).png" id="certificate-image"></a></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate">
+                        <ul>
+                            <li><span>GCC-TBC English Computer Typing 40 wpm: </span><br>August-2017<br><a href="https://drive.google.com/file/d/1ui81ZksqF7bH6MIbKGdOB4DG-Z7Xjdvn/view?usp=sharing"><img src="Images/certificate.png" id="certificate-image"></a></a></li>
+                            <li><span>GCC-TBC Marathi Computer Typing 30 wpm: </span><br>August-2017<br><a href="https://drive.google.com/file/d/19ydAbIWE5rjZx2GkIa5lPUupsWMh-YJR/view?usp=sharing"><img src="Images/certificate.png" id="certificate-image"></a></a></li>
+                            <li><span>Basic Of Web Development Course : </span><br> 1 Day Workshop to build Amazon Website pages <br><a href="https://drive.google.com/file/d/15eKB0S6KYMiakBWhGPqqKlyF3ddkKHHj/view?usp=sharing"><img src="Images/certificate.png" id="certificate-image"></a></li>
+                            <li><span>Scholarship Certificate : </span><br>4th Standard Scholarship Certificate<br><a href="https://drive.google.com/file/d/13djiC_vHVAe-xjY_0BbU7L4H3y1KMbWH/view?usp=sharing"><img src="Images/certificate.png" id="certificate-image"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -75,10 +87,106 @@
         </div>
     </div>
 
+    <!-- project section -->
     <div id="projects">
         <div class="container">
-            <h1 class="subtitle">Projects</h1>
-            <div class="project-list"></div>
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/greenhouse.jpg">
+                    <div class="layer">
+                        <h3>greenhouse.com(Clone)</h3>
+                        <p>It is Applicant tracking system and recruiting software</p><br>
+                        <h4><span> Tech Stack : </span> <span style="color: black;">HTML || CSS || JavaScript</span></h4><br>
+                        <div class="project-link">
+                            <a href="https://github.com/suraj-996/showy-knot-1716">
+                               <img src="Images/gitblack.png"> 
+                            </a>
+                            <a href="https://cool-pudding-2aae89.netlify.app/">
+                                <img src="Images/chrome.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/kindmeal.jpg">
+                    <div class="layer">
+                        <h3>kindmeal.com(Clone)</h3>
+                        <p>Introducing Malaysia's Pioneering Meat-Free Lifstyle platform brought to you by instatnt coupon and dinning.</p><br>
+                        <h4><span> Tech Stack : </span> <span style="color: black;">HTML || CSS || JavaScript</span></h4><br>
+                        <div class="project-link">
+                            <a href="https://github.com/Kajol1106/Projects">
+                               <img src="Images/gitblack.png"> 
+                            </a>
+                            <a href="https://luminous-macaron-4a3058.netlify.app/">
+                                <img src="Images/chrome.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/movie App.jpg">
+                    <div class="layer">
+                        <h3>movie.com</h3>
+                        <p>This is movie app, where you can search movies and you can see that specific movie</p><br>
+                        <h4><span> Tech Stack : </span> <span style="color: black;">HTML || CSS || JavaScript</span></h4><br>
+                        <div class="project-link">
+                            <a href="https://github.com/masai-course/kajol_fp02_009/tree/master/unit-3/sprint-2/day-3/assignments/OMDB%20Movie%20App%20III6">
+                               <img src="Images/gitblack.png"> 
+                            </a>
+                            <a href="https://kaleidoscopic-flan-0e8689.netlify.app/">
+                                <img src="Images/chrome.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <div class="social-icons">
+                        <a href="#">
+                           <img src="Images/gmail.png"><span style="color: white; font-size: 15px; margin-top: -90px;">kolagirkajol@gmail.com</span> 
+                        </a><br><br>
+                        <a href="https://wa.me/+917620716665">
+                            <img src="Images/whatsapp.png"><span style="color: white; font-size: 15px; margin-top: -90px;">+91 7620716665</span> 
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/Kajol1106">
+                           <img src="Images/github.png"> 
+                        </a>
+                        <a href="www.linkedin.com/in/kajol-kolagir-167a93201">
+                            <img src="Images/linkedin.png">
+                        </a>
+                        <a href="https://twitter.com/Kaju1106">
+                            <img src="Images/twitter.png" alt="">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCEmceFe4uTqxs4IacXXJNMw">
+                            <img src="Images/youtube.png" alt="">
+                        </a>
+                    </div>
+                    <a href="Images/Kajol Kolgir.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made by Kajol❤️...</p>
         </div>
     </div>
 </body>
@@ -98,4 +206,19 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+<script>
+    let sidemenu = document.getElementById("sidemenu");
+    function openMenu() {
+        sidemenu.style.right = "0";
+    }
+    function closeMenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
 </html>
+
+<!-- greenhouse deploy link : https://cool-pudding-2aae89.netlify.app/ -->
+
+<!-- movie app : https://github.com/masai-course/kajol_fp02_009/tree/master/unit-3/sprint-2/day-3/assignments/OMDB%20Movie%20App%20III
+
+deploy link : https://kaleidoscopic-flan-0e8689.netlify.app/ -->
