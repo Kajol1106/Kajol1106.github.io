@@ -16,6 +16,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
+    background-image: url(Images/bg1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -31,7 +32,8 @@ nav{
 }
 .logo{
     width: 300px;
-    background-color: black;
+    /* background-color: black; */
+    border-radius: 100px;
 
 }
 nav ul li{
@@ -40,12 +42,15 @@ nav ul li{
     margin: 10px 30px;
 }
 nav ul li a{
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
+    font-weight: bold;
 }
-
+nav ul li a:hover{
+    zoom: 1.9;
+}
 nav ul li a::after{
     content: '';
     width: 0;
@@ -58,7 +63,6 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
     width: 100%;
-
 }
 
 .header-text{
@@ -71,7 +75,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ff004f;
+    color: red;
 }
 
 /* about section */
@@ -124,9 +128,11 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
+
 .tab-links.active-link::after{
     width: 50%;
 }
+
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
@@ -262,6 +268,9 @@ a{
     height: 30px;
     margin-right: 13px;
 }
+.social-icons>a>img:hover{
+    zoom: 1.5;
+}
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
@@ -322,14 +331,17 @@ nav #menu-image{
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
     /* #header{
         background-image: url(Images/bg.jpeg)
     } */
     .header-text{
         margin-top: 50%;
         font-size: 18px;
-        
+        margin-bottom: 1rem;
+    }
+    #header{
+        height: auto;
     }
     .header-text h1{
         font-size: 28px;
@@ -342,7 +354,7 @@ nav #menu-image{
         height: 40px;
     }
     nav ul{
-        background: #ff004f;
+        background: #10365d;
         position: fixed;
         top: 0;
         right: -200px;
@@ -376,6 +388,106 @@ nav #menu-image{
     }
     .about-col-2{
         font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* #header{
+        background-image: url(Images/bg.jpeg)
+    } */
+    .logo{
+        width:50%;
+    }
+    .header-text{
+        margin-top: 2rem;
+        font-size: 18px;
+    }
+    #header{
+        height: auto;
+    }
+    .header-text h1{
+        font-size: 28px;
+        margin-top: 3%;
+    }
+    
+    nav #menu-image{
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        height: 40px;
+    }
+    nav ul{
+        background: #10365d;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul img{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .project-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .project-link a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 1rem;
+    }
+    .project-link img{
+        height: auto;
+        width:25%;
+    }   
+
+    .subtitle{
+        font-size: 30px;
+    }
+   
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .about-col-1 img{
+        width:100%;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .about-col-2 p{
+        width:100%
+    }
+    #about {
+        margin-top: 2rem;
+        padding: 0;
     }
     .tab-links{
         font-size: 16px;
