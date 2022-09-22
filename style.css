@@ -153,7 +153,18 @@ a{
     color: rgb(14, 4, 153);
 }
 
-
+/* tech skills */
+.user{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 30px;
+    justify-content: center;
+}
+.techimg{
+    height: 200px;
+    width: 70%;
+}
 
 /* project section */
 #projects{
