@@ -331,6 +331,30 @@ nav #menu-image{
     display: none;
 }
 
+
+/* tech skills */
+
+
+.user{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 30px;
+    justify-content: center;
+}
+.techimg{
+    height: 200px;
+    width: 70%;
+}
+
+/* #techSkills{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/tech12.jpeg);
+    background-size: cover;
+    background-position: center;
+} */
+
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
     /* #header{
         background-image: url(Images/bg.jpeg)
@@ -398,6 +422,17 @@ nav #menu-image{
     }
     .copyright{
         font-size: 14px;
+    }
+    .user{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 30px;
+        justify-content: center;
+    }
+    .techimg{
+        height: 150px;
+        width: 70%;
     }
 }
 
@@ -498,5 +533,16 @@ nav #menu-image{
     }
     .copyright{
         font-size: 14px;
+    }
+    .user{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+        justify-content: center;
+    }
+    .techimg{
+        height: 100px;
+        width: 80%;
     }
 }
