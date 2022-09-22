@@ -424,11 +424,9 @@ nav #menu-image{
         font-size: 14px;
     }
     .user{
-        display: grid;
-        grid-template-rows: auto;
+        
         grid-template-columns: repeat(4,1fr);
-        grid-gap: 30px;
-        justify-content: center;
+       
     }
     .techimg{
         height: 150px;
@@ -535,11 +533,9 @@ nav #menu-image{
         font-size: 14px;
     }
     .user{
-        display: grid;
-        grid-template-rows: auto;
+        
         grid-template-columns: repeat(3,1fr);
-        grid-gap: 30px;
-        justify-content: center;
+       
     }
     .techimg{
         height: 100px;
