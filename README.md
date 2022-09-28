@@ -1,4 +1,3 @@
-# Kajol1106.github.io
 
 <img  src="https://www.aaditritechnology.com/images/redesign.gif">
 
