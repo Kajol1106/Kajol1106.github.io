@@ -1,4 +1,3 @@
-
 <img  src="https://www.aaditritechnology.com/images/redesign.gif">
 
 <h1 align="center">Hi 👋, I'm Kajol Kolagir</h1>
