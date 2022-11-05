@@ -221,14 +221,14 @@ section .title::after {
 }
 
 /* about section styling */
-.about{
-
- 
+.about, .skills, .calender{
  background-image: url("https://images.unsplash.com/photo-1523878288860-7ad281611901?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
  background-size: cover;
   background-attachment: fixed;
 }
-.about .title::after {
+.about .title::after,
+.skills .title::after,
+.calender .title::after {
   content: "who i am";
  
 }
@@ -249,7 +249,7 @@ section .title::after {
   font-weight: 600;
   margin-bottom: 10px;
 }
-.about .about-content .right .text span {
+.about .about-content .right .text  {
   color: red;
   
 }
@@ -272,24 +272,29 @@ section .title::after {
   color: #ffcc00;
   background: none;
 }
-.about .title::after {
+.about .title::after,
+.skills .title::after,
+.calender .title::after {
   background-image: url("https://images.unsplash.com/photo-1523878288860-7ad281611901?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
   color: red;
 }
 
 /* services section styling */
 .services,
-.project {
+.project,
+.contact {
   color: #fff;
   background: #111;
 }
 .services .title::before,
-.project .title::before {
+.project .title::before,
+ .contact .title::before{
   
   background: #fff;
 }
 .services .title::after,
-.project .title::after {
+.project .title::after,
+.contact .title::after {
   background: #111;
   content: "what i provide";
 }
@@ -520,6 +525,34 @@ section .title::after {
   height: 120px;
 }
 
+
+/* github section styling */
+.calender .title::after {
+  content: "calender";
+}
+.serv-content{
+  width: 90%;
+  margin: auto;
+}
+.gimg1 {
+  width: 600px;
+  margin: auto;
+  
+}
+.gimg {
+  width: 100%;
+  margin: auto;
+  height: 250px;
+
+}
+.card1 {
+  text-align: center;
+  margin: auto;
+  /* box-shadow: rgba(19, 229, 113, 0.918) 0px 1px 2px 0px,
+  rgba(5, 94, 33, 0.918) 0px 1px 3px 1px; */
+  margin-bottom: 3%;
+}
+
 /* contact section styling */
 .contact .title::after {
   content: "get in touch";
@@ -549,6 +582,7 @@ section .title::after {
 .contact .contact-content .row i {
   font-size: 25px;
   color: #ffcc00;
+  
 }
 .contact .contact-content .info .head {
   font-weight: 500;
@@ -558,11 +592,13 @@ section .title::after {
 .contact .contact-content .info a:hover,
 .contact .contact-content .info a:link {
   text-decoration: none;
-  color: #111;
+  /* color: #111; */
+  color: white;
 }
 
 .contact .contact-content .info .sub-title {
-  color: #333;
+  /* color: #333; */
+  color: white;
 }
 .contact .right form .fields {
   display: flex;
@@ -625,7 +661,7 @@ section .title::after {
 }
 /* footer section styling */
 footer {
-  background: #111;
+  background: rgb(150, 7, 140);
   padding: 15px 23px;
   color: #fff;
   text-align: center;
