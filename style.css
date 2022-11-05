@@ -40,7 +40,8 @@ section {
 .skills,
 .project,
 .contact,
-footer {
+footer,
+.calender {
   font-family: "Poppins", sans-serif;
 }
 .about .about-content,
@@ -530,33 +531,36 @@ section .title::after {
 .calender .title::after {
   content: "calender";
 }
+
 .serv-content{
   width: 90%;
   margin: auto;
 }
-.gimg1 {
-  width: 600px;
-  margin: auto;
-  
+.card1{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  gap: 20px;
+  margin-bottom: 2%;
 }
-.gimg {
-  width: 100%;
-  margin: auto;
-  height: 250px;
+.card1 img{
+  width: 32%;
+}
 
-}
+
 .card1 {
-  text-align: center;
+  /* text-align: center; */
   margin: auto;
   /* box-shadow: rgba(19, 229, 113, 0.918) 0px 1px 2px 0px,
   rgba(5, 94, 33, 0.918) 0px 1px 3px 1px; */
   margin-bottom: 3%;
 }
-
 .cardcal {
+  background-color: black;
   box-shadow: rgba(19, 229, 113, 0.918) 0px 1px 2px 0px,
   rgba(5, 94, 33, 0.918) 0px 1px 3px 1px;
-  background-color: rgba(245, 245, 245, 0.598);
 }
 
 /* contact section styling */

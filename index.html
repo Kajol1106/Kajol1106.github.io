@@ -11,8 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <!-- <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script> -->
+    <script src="https://unpkg.com/github-calendar@2.3.1/dist/github-calendar.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 
 </head>
 <body>
@@ -25,9 +27,10 @@
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
-                <!-- <li><a href="#services" class="menu-btn">Services</a></li> -->
+                <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#project" class="menu-btn">Projects</a></li>
+                <!-- <li><a href="#project" class="menu-btn">Github-Stats</a></li> -->
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -227,11 +230,16 @@
             <!-- <p style="text-align: center;"><img src="https://github-readme-streak-stats.herokuapp.com/?user=Kajol1106&&theme=tokyonight" alt="Kajol" /></p> -->
             <div class="serve-content">
                 <div class="card1">
-                    <img class="gimg1" src="https://github-readme-streak-stats.herokuapp.com/?user=Kajol1106&&theme=tokyonight" alt="gitstats">
+                    <!-- <img class="gimg1" src="https://github-readme-streak-stats.herokuapp.com/?user=Kajol1106&&theme=tokyonight" alt="gitstats"> -->
+                    <img src="https://github-readme-stats.vercel.app/api?username=Kajol1106&theme=dark&hide_border=false&include_all_commits=true&count_private=false" alt="">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kajol1106&theme=dark&hide_border=false" alt="">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kajol1106&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact" alt="">
+        
                 </div>
                     <!-- github calender -->
-                <div class="card1 cardcal">
+                <div class="cardcal" style=" color: #f49812">
                     <!-- github-calendar div -->
+                    loading stuff here
                 </div>
             </div>
         </div>
@@ -304,6 +312,8 @@
 
 <script src="script.js"></script>
 <script>
-  GitHubCalendar(".cardcal", "Kajol1106", { responsive: true });
+    GitHubCalendar(".cardcal", "Kajol1106");
+
+    GitHubCalendar(".cardcal", "Kajol1106", { responsive: true });
 </script>
   
