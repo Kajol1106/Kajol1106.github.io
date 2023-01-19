@@ -172,13 +172,14 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80") no-repeat center;
+  background: url("Images/background.png") no-repeat center;
   background-color: #111;
   height: 100vh;
   color: #fff;
-  min-height: 500px;
+  /* min-height: 500px; */
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-position: center;
   font-family: "Ubuntu", sans-serif;
 }
 .home .max-width {
@@ -223,17 +224,18 @@ section .title::after {
 }
 
 /* about section styling */
-.about, .skills, .calender{
- background-image: url("https://images.unsplash.com/photo-1523878288860-7ad281611901?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+.about, .project, .contact{
+ /*background-image: url("https://images.unsplash.com/photo-1523878288860-7ad281611901?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"); */
+ background-color: white;
  background-size: cover;
   background-attachment: fixed;
 }
-.about .title::after,
+/* .about .title::after,
 .skills .title::after,
 .calender .title::after {
   content: "Who I Am";
  
-}
+} */
 .about .about-content .left {
   width: 45%;
 }
@@ -285,8 +287,8 @@ section .title::after {
 
 /* services section styling */
 .services,
-.project,
-.contact {
+.skills,
+.calender {
   color: #fff;
   background: #111;
 }
@@ -296,12 +298,12 @@ section .title::after {
   
   background: #fff;
 }
-.services .title::after,
+/* .services .title::after,
 .project .title::after,
 .contact .title::after {
   background: #111;
   content: "What I Provide";
-}
+} */
 .services .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
@@ -345,9 +347,9 @@ section .title::after {
   /* border: 5px solid crimson; */
   transition: all 0.3s ease;
 }
-.skills .title::after {
+/* .skills .title::after {
   content: "What I Know";
-}
+} */
 
 /* skills right column */
 .skills .skills-content .column {
@@ -425,11 +427,13 @@ section .title::after {
 }
 
 /* project section styling */
-.project .title::after {
+/* .project .title::after {
   content: "See My Work";
-}
+} */
 .project .carousel .card {
   background: #222;
+  /* background: rgb(9, 99, 120); */
+  color: white;
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
@@ -441,6 +445,7 @@ section .title::after {
   color: #000;
   /* change */
 }
+
 .project .carousel .card:hover .techStack {
   color: rgb(12, 94, 94);
   font-weight: bold;
@@ -535,9 +540,9 @@ section .title::after {
 
 
 /* github section styling */
-.calender .title::after {
+/* .calender .title::after {
   content: "Calender";
-}
+} */
 
 .serv-content{
   width: 90%;
@@ -571,23 +576,16 @@ section .title::after {
 }
 
 /* contact section styling */
-.contact .title::after {
-  content: "Get In Touch";
+
+.contact-content {
+  margin: auto;
+  padding: auto;
 }
-.contact .contact-content .column {
-  width: calc(50% - 30px);
-}
-.contact .contact-content .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.contact .contact-content .left p {
-  text-align: justify;
-}
-.contact .contact-content .left .icons {
+
+.contact .contact-content .icons {
   margin: 10px 0;
 }
+
 .contact .contact-content .row {
   display: flex;
   height: 65px;
@@ -598,83 +596,23 @@ section .title::after {
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color: #ffcc00;
+  color: black;
   
 }
 .contact .contact-content .info .head {
   font-weight: 500;
 }
-
 .contact .contact-content .info a,
 .contact .contact-content .info a:hover,
 .contact .contact-content .info a:link {
   text-decoration: none;
   /* color: #111; */
-  color: white;
+  color: black;
+  font-weight: bold;
 }
-
 .contact .contact-content .info .sub-title {
   /* color: #333; */
-  color: white;
-}
-.contact .right form .fields {
-  display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field {
-  height: 45px;
-  width: 100%;
-  margin-bottom: 15px;
-}
-.contact .right form .textarea {
-  height: 80px;
-  width: 100%;
-}
-.contact .right form .name {
-  margin-right: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea {
-  height: 100%;
-  width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 6px;
-  outline: none;
-  padding: 0 15px;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-  transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus {
-  border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea {
-  padding-top: 10px;
-  resize: none;
-}
-.contact .right form .button-area {
-  display: flex;
-  align-items: center;
-}
-.right form .button-area button {
   color: black;
-  display: block;
-  width: 160px !important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: #ffcc00;
-  border: 2px solid #ffcc00;
-  transition: all 0.3s ease;
-}
-.right form .button-area button:hover {
-  color: #ffcc00;
-  background: none;
 }
 /* footer section styling */
 footer {
