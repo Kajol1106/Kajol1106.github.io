@@ -363,6 +363,7 @@ section .title::after {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  
 }
 .skills .skills-content .left p {
   text-align: justify;
@@ -596,7 +597,8 @@ section .title::after {
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color: rgb(6, 92, 52);
+  color: #ffcc00;
+  font-weight: bold;
   
 }
 .contact .contact-content .info .head {
@@ -616,7 +618,7 @@ section .title::after {
 }
 /* footer section styling */
 footer {
-  background: rgb(150, 7, 140);
+  background: black;
   padding: 15px 23px;
   color: #fff;
   text-align: center;
@@ -630,17 +632,31 @@ footer span a:hover {
 }
 
 /* responsive media query start */
-@media (max-width: 1104px) {
+@media (max-width: 1202px) {
+  /* 1104 */
   .about .about-content .left img {
     height: 450px;
     width: 400px;
   }
+
+  .skills-images img {
+    height: 120px;
+    width: 120px;
+    padding-bottom: 5px;
+  }
+  
 }
 
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
   }
+  .skills-images img {
+    height: 120px;
+    width: 120px;
+    padding-bottom: 5px;
+  }
+  
 }
 @media (max-width: 947px) {
   .menu-btn {
@@ -696,9 +712,14 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
-  .services .serv-content .card {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
+  .skills-images img {
+    height: 110px;
+    width: 110px;
+  }
+  .skills .skills-content .column {
+    width: calc(40% - 30px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .skills .skills-content .column,
   .contact .contact-content .column {
@@ -720,8 +741,9 @@ footer span a:hover {
   .home .home-content a {
     font-size: 20px;
   }
-  .services .serv-content .card {
-    width: 100%;
+  .skills-images img {
+    height: 110px;
+    width: 110px;
   }
 }
 
@@ -735,6 +757,10 @@ footer span a:hover {
   .about .about-content .right .text,
   .skills .skills-content .left .text {
     font-size: 19px;
+  }
+  .skills-images img {
+    height: 110px;
+    width: 110px;
   }
   .contact .right form .fields {
     flex-direction: column;
