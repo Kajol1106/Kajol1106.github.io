@@ -653,6 +653,10 @@ footer span a:hover {
     width: 100%;
     margin-bottom: 35px;
   }
+
+  #container-1 #parahead {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -714,6 +718,10 @@ footer span a:hover {
 
   #tech {
     height: 25px;
+  }
+
+  #container-1 #parahead {
+    font-size: 16px;
   }
 }
 
@@ -786,5 +794,10 @@ footer span a:hover {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
+  }
+
+  #container-1 #parahead {
+    font-size: 15px;
+    margin-top: 8px;
   }
 }
