@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
+   <!-- icon CDN link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css">
+
 </head>
 
 <body>
@@ -270,50 +274,142 @@
 
   <!-- contact section start -->
   <section class="contact" id="contact">
-    <h2 class="title">Contact me</h2>
-    <div class="max-width" style="display: flex; justify-content: center;">
-      <!-- <h2 class="title">Contact me</h2> -->
-      <div class="contact-content">
-        <div class="icons">
-          <div class="row">
-            <a href=" mailto:kolagirkajol@gmail.com"> <i class="fas fa-envelope"></i> </a>
-            <div class="info">
-              <div class="head"></div>
-              <div class="sub-title"> <a href="mailto:kolagirkajol@gmail.com"> kolagirkajol@gmail.com </a>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <a href=""> <i class="fas fa-phone-alt"></i></i> </a>
-            <div class="info">
-              <div class="head"></div>
-              <div class="sub-title"> <a href=""> +91 7620716665 </a> </div>
-            </div>
-          </div>
-          <div class="row">
-            <a href="https://www.linkedin.com/in/kajol-kolagir/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
-            <div class="info">
-              <!-- <div class="head">Address</div> -->
-              <div class="sub-title"> <a href="https://www.linkedin.com/in/kajol-kolagir/" target="_blank">Linkedin</a>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <a href="https://github.com/Kajol1106" target="_blank"> <i class="fab fa-github"></i> </a>
-            <div class="info">
-              <!-- <div class="head">Email</div> -->
-              <div class="sub-title"> <a href="https://github.com/Kajol1106" target="_blank">GitHub</a>
-              </div>
-            </div>
-          </div>
+    <h2 class="title">Contact</h2>
+
+  <div id="contactsec">
+      <div class="information">
+        <!-- box1 -->
+        <div class="info-box">
+            <i class="bx bxs-user"></i>
+            <span>Kajol Kolagir</span>
         </div>
+        <!-- box2 -->
+        <div class="info-box">
+            <i class="bx bxs-phone"></i>
+            <span><a href="tel:+917620716665"> +91 7620716665</a></span>
+        </div>
+        <!-- box3 -->
+        <div class="info-box">
+            <i class="bx bxs-envelope"></i>
+            <span> <a href="mailto: kolagirkajol@gmail.com" > kolagirkajol@gmail.com</a></span>
+        </div>
+        <!-- box 4 -->
+        <div class="info-box">
+            <i class="bx bxs-map"></i>
+            <span> Nanded, Maharashtra</span>
+        </div>
+    </div>
+
+    <!-- created  using formspree
+    link : https://formspree.io/forms/mqkogbgd/integration -->
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/mqkogbgd" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Enter Your Name"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="Enter Your Email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="number">Number</label>
+            <input
+              type="number"
+              id="number"
+              name="sender-number"
+              placeholder="Enter Your Number"
+              class="input-field"
+            />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              cols="60"
+              rows="10"
+              placeholder="Enter Your Message"
+              name="message"
+              class="input-field"
+              required
+            ></textarea>
+          </div>
+          <h2>
+
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </h2>
+        </form>
       </div>
     </div>
-  </section>
+
+  </div>
+</section>
+
+
+  <div class="socials">
+    <a href = "mailto:kolagirkajol@gmail.com">
+      <img
+        src="Assets/icons/email.gif"
+        alt="Email"
+        loading="lazy"
+        class="socicon"
+    />
+      </a>
+      
+      <a href = "tel:7620716665">
+        <img
+          src="Assets/icons/call.gif"
+          alt="Phone"
+          loading="lazy"
+          class="socicon"
+      />
+        </a>
+    <a id="social" href="https://www.linkedin.com/in/kajol-kolagir/" target="_blank"
+      ><img
+        src="Assets/icons/icons8-linkedin-circled.gif"
+        alt="Linkedin"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a id="social" href="https://github.com/Kajol1106" target="_blank"
+      ><img src="Assets/icons/icons8-github.gif" alt="Github" class="socicon"
+    /></a> 
+    <a id="social" href="https://www.youtube.com/channel/UCEmceFe4uTqxs4IacXXJNMw" target="_blank"
+      ><img src="Assets/icons/icons8-youtube-logo.gif" alt="Youtube" class="socicon"
+    /></a> 
+    </div>
+
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"
+    ><img
+      src="Assets/icons/upwardarrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+  /></i>
 
   <!-- footer section start -->
   <footer>
-    <span class="far fa-copyright"></span> Template Insipiration by Deeksha Chandan.</span>
+    <span class="far fa-copyright">Template Insipiration by Deeksha Chandan.</span>
   </footer>
 
 
