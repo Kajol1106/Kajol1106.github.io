@@ -1017,6 +1017,11 @@ footer span a:hover {
     grid-template-rows: repeat(4, 1fr);
   }
 
+  /* ========== Experience Section ========== */
+  #experience {
+
+  }
+
   /* ========== Project Section ========== */
   #container-1 {
     position: initial;
@@ -1070,5 +1075,133 @@ footer span a:hover {
   #container-1 #parahead {
     font-size: 13px;
     margin-top: 8px;
+  }
+}
+
+/* Responsive styles for Experience Section */
+@media (max-width: 1200px) {
+  .experience {
+    margin: 2rem 5rem auto 10rem;
+  }
+
+  .year {
+    left: -60px;
+  }
+
+  .details {
+    margin-left: 60px;
+    width: 70%;
+  }
+
+  .dot {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .experience {
+    margin: 2rem 2rem auto 5rem;
+  }
+
+  .year {
+    left: -50px;
+  }
+
+  .details {
+    margin-left: 50px;
+    width: 75%;
+  }
+
+  .experience-title {
+    font-size: 40px;
+  }
+
+  .year-label {
+    font-size: 18px;
+  }
+
+  .dot {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    margin: 2rem 1rem auto 2rem;
+  }
+
+  .year {
+    left: -40px;
+  }
+
+  .details {
+    margin-left: 40px;
+    width: 80%;
+  }
+
+  .experience-title {
+    font-size: 35px;
+  }
+
+  .year-label {
+    font-size: 16px;
+  }
+
+  .dot {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .experience {
+    margin: 1rem 0.5rem;
+  }
+
+  .year {
+    left: -30px;
+  }
+
+  .details {
+    margin-left: 30px;
+    width: 85%;
+  }
+
+  .experience-title {
+    font-size: 30px;
+  }
+
+  .year-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .experience {
+    margin: 1rem 0.5rem;
+  }
+
+  .year {
+    left: -25px;
+  }
+
+  .details {
+    margin-left: 25px;
+    width: 90%;
+  }
+
+  .experience-title {
+    font-size: 25px;
+  }
+
+  .year-label {
+    font-size: 12px;
+  }
+
+  .dot {
+    width: 9px;
+    height: 9px;
   }
 }
