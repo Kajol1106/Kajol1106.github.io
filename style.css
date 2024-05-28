@@ -573,6 +573,9 @@ section .title::after {
   font-size: 50px;
 }
 
+.section .projects-title::before {
+  background-color: white;
+}
 #container-1 {
   position: relative;
   text-align: center;
@@ -993,6 +996,12 @@ footer span a:hover {
     grid-template-rows: repeat(3, 1fr);
   }
 
+  /* ==========GIT SECTION ========== */
+  .serve-content {
+    width: 80%;
+    margin: auto;
+  }
+
   /* ========== Project Section ========== */
   #links {
     font-size: 7px;
@@ -1041,7 +1050,7 @@ footer span a:hover {
   }
 
   .experience {
-    margin: 2rem 1rem auto 2rem;
+    margin: 1rem 5rem auto 8rem;
   }
 
   .year {
@@ -1083,7 +1092,7 @@ footer span a:hover {
 
   /* ========== Skills Section ========== */
   .skills-wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
 
@@ -1170,8 +1179,54 @@ footer span a:hover {
 }
 
 @media (max-width: 576px) {
+  section .title {
+    font-size: 25px;
+  }
+  .home .home-content .text-2 {
+    font-size: 40px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 18px;
+  }
+  .calender .title {
+    font-size: 30px;
+    margin: -50px auto 25px auto;
+  }
+
+  .projects-title {
+    font-size: 30px;
+    margin: -50px auto 25px auto;
+  }
+
+  .max-width {
+    padding: 0 17px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 40px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+
+  .about .about-content .left img {
+    height: 242px;
+    width: 200px;
+  }
+
+  .about .about-content .right .text {
+    width: 86%;
+    margin: auto;
+  }
+
+  .about .about-content .right p {
+    width: 80%;
+    margin: auto;
+  }
   .experience {
-    margin: 1rem 0.5rem;
+    margin: 1rem 1rem auto 4.2rem;
   }
 
   .year {
@@ -1185,9 +1240,39 @@ footer span a:hover {
 
   .experience-title {
     font-size: 30px;
+    margin: -50px auto 25px auto;
   }
 
   .year-label {
     font-size: 14px;
+    width: 55%;
+  }
+
+  .skill-header {
+    font-size: 30px;
+    margin: -50px auto 25px auto;
+  }
+
+  .skills-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 320px) {
+  .max-width {
+    padding: 0 14px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 30px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 22px;
+  }
+  .skills-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }
