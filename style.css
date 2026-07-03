@@ -562,6 +562,41 @@ section .title::after {
     rgba(5, 94, 33, 0.918) 0px 1px 3px 1px;
 } */
 
+.skills {
+    padding: 60px 10%;
+}
+
+.skill-header {
+    text-align: center;
+    margin: 40px 0 25px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;   /* Center the badges */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-tag {
+    padding: 10px 20px;
+    background: var(--blue);
+    border: 1px solid #d1d5db;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+    color: white;
+}
+
+.skill-tag:hover {
+    background: #4f46e5;
+    color: white;
+    transform: translateY(-3px);
+}
+
 /* ========== Project Section ==========  */
 #projects {
   background-color: #000;
